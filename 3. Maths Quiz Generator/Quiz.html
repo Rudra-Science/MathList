@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Question Generator</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Math Question Generator</h1>
+
+        <!-- Chapter Selection Dropdown -->
+        <label for="topicSelect">Select Chapter:</label>
+        <select id="topicSelect">
+            <option value="algebra">Algebraic Expressions and Identities</option>
+            <option value="mensuration">Mensuration</option>
+            <option value="exponents">Exponents and Powers</option>
+            <option value="rational_numbers">Rational Numbers</option>
+            <option value="direct_proportions">Direct and Inverse Proportions</option>
+            <option value="quadrilaterals">Understanding Quadrilaterals</option>
+            <option value="factorization">Factorization</option>
+            <option value="comparingQuantities">Comparing Quantities</option>
+            <option value="number_system">Binary</option>
+        </select>
+
+        <!-- Level Selection Dropdown Expanded to Level 10 -->
+        <label for="levelSelect">Select Level:</label>
+        <select id="levelSelect">
+            <option value="1">Level 1 - Beginner</option>
+            <option value="2">Level 2 - Easy</option>
+            <option value="3">Level 3 - Moderate</option>
+            <option value="4">Level 4 - Challenging</option>
+            <option value="5">Level 5 - Hard</option>
+            <option value="6">Level 6 - Very Hard</option>
+            <option value="7">Level 7 - Expert</option>
+            <option value="8">Level 8 - Insane</option>
+            <option value="9">Level 9 - Legendary</option>
+            <option value="10">Level 10 - Godly++++</option>
+        </select>
+
+        <label for="questionCount">Number of Questions:</label>
+        <input type="number" id="questionCount" min="1" max="20" value="10" />
+
+        <button id="generateBtn">Generate Questions</button>
+        <button id="clearBtn" style="display: none;">Clear Questions</button>
+        <div id="questions" class="questions"></div>        
+    </div>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Body styling for Dark Mode */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #fdcb6e; /* Light yellow text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Styling the container */
+.container {
+  text-align: center;
+  background-color: #1e1e1e; /* Dark container */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  width: 90%; /* Full width on smaller screens */
+  max-width: 400px; /* Max width for larger screens */
+}
+
+/* Header styling */
+h1 {
+  color: #fdcb6e; /* Light yellow for header */
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+input {
+  padding: 10px;
+  width: 100%; /* Full width for input */
+  margin-bottom: 20px;
+  border: 2px solid #ffffff; /* Light border */
+  border-radius: 5px;
+  background-color: #333333; /* Dark input background */
+  color: #fdcb6e; /* Light yellow text color */
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #0984e3; /* Bright blue button */
+  color: #fdcb6e; /* Light yellow text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #74b9ff; /* Lighter blue on hover */
+}
+
+/* Magic square styling */
+#magicSquare {
+  margin-top: 20px;
+}
+
+.square-row {
+  display: flex;
+  justify-content: center; /* Center the rows */
+  margin: 5px 0; /* Space between rows */
+}
+
+.square-cell {
+  width: 80px; /* Set a fixed width */
+  height: 80px; /* Set a fixed height */
+  display: flex; /* Use flex to center content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  border: 2px solid #ffffff; /* Light border */
+  text-align: center;
+  font-size: 24px; /* Increased font size */
+  font-weight: bold;
+  color: #fdcb6e; /* Light yellow text color */
+  margin: 0 5px; /* Space between cells */
+  border-radius: 5px; /* Rounded corners for cells */
+  background-color: #2c3e50; /* Darker blue-gray for cells */
+  transition: background-color 0.3s; /* Smooth background change */
+}
+
+.square-cell:hover {
+  background-color: #34495e; /* Lighter blue-gray on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2em; /* Adjust header font size */
+  }
+
+  button {
+      font-size: 14px; /* Adjust button font size */
+  }
+
+  .square-cell {
+      width: 60px; /* Reduce size for smaller screens */
+      height: 60px; /* Reduce size for smaller screens */
+      font-size: 20px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5em; /* Further adjust header font size */
+  }
+
+  input {
+      width: 100%; /* Full width input on small screens */
+  }
+
+  button {
+      width: 100%; /* Full width button */
+      padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .square-cell {
+      width: 50px; /* Further reduce size */
+      height: 50px; /* Further reduce size */
+      font-size: 18px; /* Adjust font size */
+  }
+}

@@ -1,0 +1,111 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #fdcb6e;
+    margin-bottom: 20px;
+}
+
+select, input {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+select:focus, input:focus {
+    background-color: #3d3d3d;
+    outline: none;
+}
+
+.convert-btn {
+    background-color: #0984e3;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.convert-btn:hover {
+    background-color: #74b9ff;
+}
+
+input[readonly] {
+    background-color: #3d3d3d;
+}
+
+/* Responsive adjustments */
+
+/* For large screens (above 1200px) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+/* For medium screens (between 768px and 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        max-width: 500px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    select, input {
+        padding: 8px;
+    }
+    .convert-btn {
+        padding: 8px 16px;
+    }
+}
+
+/* For small screens (between 480px and 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+    .container {
+        max-width: 400px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    select, input {
+        padding: 6px;
+    }
+    .convert-btn {
+        padding: 6px 12px;
+    }
+}
+
+/* For extra small screens (below 479px) */
+@media (max-width: 479px) {
+    .container {
+        max-width: 300px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    select, input {
+        padding: 4px;
+    }
+    .convert-btn {
+        padding: 4px 8px;
+    }
+}

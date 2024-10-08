@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="UC.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <select id="categorySelect" onchange="updateUnits()">
+            <option value="length">Length</option>
+            <option value="mass">Mass</option>
+            <option value="temperature">Temperature</option>
+            <option value="area">Area</option>
+            <option value="data">Data</option>
+            <option value="speed">Speed</option>
+            <option value="time">Time</option>
+            <option value="volume">Volume</option>
+        </select>
+        <div class="converter">
+            <select id="unitFrom" onchange="updatePlaceholders()"></select>
+            <input type="number" id="valueFrom" placeholder="Value" oninput="clearResult()">
+            <button class="convert-btn" onclick="convert()">Convert</button>
+            <input type="number" id="valueTo" placeholder="Converted Value" readonly>
+            <select id="unitTo" onchange="updatePlaceholders()"></select>
+        </div>
+    </div>
+    <script src="UC.js"></script>
+</body>
+</html>

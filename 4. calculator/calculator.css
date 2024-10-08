@@ -1,0 +1,169 @@
+/* General body styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212; /* Dark background */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Calculator styling */
+.calculator {
+    background-color: #1e1e1e; /* Darker background for the calculator */
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    width: 360px; /* Default width */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Display styling */
+.display {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.display input {
+    width: 100%;
+    height: 80px; /* Make it taller for better visibility */
+    border: 2px solid #ccc; /* Light border */
+    background-color: #fafafa; /* Light background for input */
+    text-align: right;
+    padding: 10px 20px; /* Padding for comfortable spacing */
+    font-size: 2.4rem; /* Larger font for better readability */
+    border-radius: 10px;
+    color: #333; /* Dark text color */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    caret-color: #ff0000; /* Cursor color */
+    outline: none; /* Remove default outline */
+}
+
+/* Add focus styles to highlight the input */
+.display input:focus {
+    border-color: #ff0000; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+/* Grid layout for buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 10px; /* Space between buttons */
+    align-items: stretch; /* Ensure buttons stretch to fill the height */
+}
+
+.btn {
+    background-color: #ffcccc; /* Light red button background */
+    border: none;
+    padding: 0; /* Reset padding to make height uniform */
+    font-size: 1.6rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out; /* Add transform transition */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    height: 60px; /* Fixed height for buttons */
+}
+
+/* Button hover effects */
+.btn:hover {
+    background-color: #ffb3b3; /* Medium red on hover */
+}
+
+.btn:active {
+    background-color: #ff9999; /* Darker red when pressed */
+}
+
+/* Top function buttons like C, DEL, and View History */
+.top-btn {
+    background-color: #ff6666; /* Bright red for top buttons */
+    color: white;
+}
+
+.top-btn:hover {
+    background-color: #ff4d4d; /* Darker red on hover */
+}
+
+/* Operator buttons */
+.operator {
+    background-color: #ff4040; /* Strong red for operator buttons */
+    color: white;
+}
+
+.operator:hover {
+    background-color: #ff3333; /* Darker red on hover */
+}
+
+/* Equal button styling */
+.equal-btn {
+    background-color: #ff0000; /* Bright red for equal button */
+    color: white;
+}
+
+.equal-btn:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+/* Clear History button */
+.clear-history {
+    background-color: #ff5252; /* Red for clear action */
+    color: white;
+}
+
+.clear-history:hover {
+    background-color: #ff1744; /* Darker red on hover */
+}
+
+/* Make zero span across two columns */
+.zero-btn {
+    grid-column: span 2; /* Span two columns for zero */
+}
+
+/* History section styling */
+.history {
+    margin-top: 20px;
+}
+
+.history h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ccc; /* Light text color */
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history li {
+    padding: 5px;
+    border-bottom: 1px solid #444; /* Dark border for history items */
+    color: #bbb; /* Light gray text for history */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .calculator {
+        width: 100%; /* Full width on mobile */
+        padding: 10px; /* Reduced padding */
+    }
+
+    .display input {
+        height: 60px; /* Adjusted height for mobile */
+        font-size: 2rem; /* Slightly smaller font */
+    }
+
+    .btn {
+        padding: 0; /* Reset padding for mobile buttons */
+        font-size: 1.4rem; /* Slightly smaller font size */
+        height: 50px; /* Fixed height for mobile buttons */
+    }
+
+    .buttons {
+        grid-template-columns: repeat(4, 1fr); /* Keep the grid for mobile */
+    }
+}

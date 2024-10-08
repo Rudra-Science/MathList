@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #1e1e1e; /* Darker container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%; /* Full width on smaller screens */
+    max-width: 400px; /* Max width for larger screens */
+}
+
+h1 {
+    color: #fdcb6e; /* Light yellow for header */
+}
+
+.input-group {
+    margin: 20px 0;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 80px;
+    margin: 0 5px;
+    border: 1px solid #555; /* Darker border */
+    border-radius: 4px;
+    background-color: #333; /* Dark input background */
+    color: #e0e0e0; /* Light input text */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #0984e3; /* Bright blue button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #74b9ff; /* Lighter blue on hover */
+}
+
+.result {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prime {
+    background-color: #00b894; /* Bright green for prime numbers */
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.status-message {
+    font-size: 16px;
+    color: #bbb; /* Light gray */
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Adjust header font size */
+    }
+
+    input[type="number"] {
+        width: 60px; /* Adjust width for smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Further adjust header font size */
+    }
+
+    input[type="number"] {
+        width: 100%; /* Full width input on small screens */
+    }
+
+    button {
+        width: 100%; /* Full width button */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability Simulation</title>
+    <link rel="stylesheet" href="Pro.css">
+</head>
+<body>
+    <h1>Probability Simulation</h1>
+
+    <div class="input-group">
+        <label for="totalOutcomes">Total Number of Outcomes:</label>
+        <input type="number" id="totalOutcomes" min="1" placeholder="Enter total outcomes" required>
+    </div>
+    
+    <div class="input-group">
+        <label for="differentOutcomes">Number of Different Types of Outcomes:</label>
+        <input type="number" id="differentOutcomes" min="1" placeholder="Enter number of types" required>
+    </div>
+
+    <button id="generateButton">Generate Outcome Inputs</button>
+    
+    <div id="outcomeInputs" class="outcome-inputs"></div>
+    
+    <div class="button-group">
+        <button id="calculateButton" style="display:none;">Calculate Probability</button>
+        <button id="refreshButton" style="display:none;">Refresh</button>
+    </div>
+    
+    <div id="result" style="display:none;"></div>
+    
+    <script src="Pro.js"></script>
+</body>
+</html>

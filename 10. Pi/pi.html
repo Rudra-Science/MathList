@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Numbers finder</title>
+    <link rel="stylesheet" href="pi.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pi Machin Calculator</h1>
+        <form id="piForm" onsubmit="return false;">
+            <div class="form-group">
+                <label for="t1">Number of Digits:</label>
+                <input type="text" name="t1" id="t1" value="100" maxlength="25">
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" id="cbCount" checked> Add Count</label>
+                <label><input type="checkbox" id="cbSpace" checked> Add Spaces</label>
+            </div>
+            <input type="button" value="Calculate Pi" onclick="calcPI(document.getElementById('t1').value)">
+        </form>
+        <div id="d1" class="result">Answer appears here</div>
+    </div>
+    <script src="pi.js"></script>
+</body>
+</html>

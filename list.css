@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    margin: 0;
+}
+
+header {
+    background-color: #1c3f94; /* Deep blue for header */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0 30px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically on small screens */
+}
+
+.product-list {
+    padding: 20px;
+    max-width: 800px; /* Center the product list */
+    margin: 0 auto; /* Centering the list */
+}
+
+.products-heading {
+    color: #00b894; /* Bright green */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product {
+    background-color: #2c3e50; /* Darker gray-blue for product background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    text-align: center;
+    transition: transform 0.2s;
+    margin-bottom: 20px; /* Space between products */
+    width: 100%; /* Responsive width */
+    max-width: 400px; /* Max width for larger screens */
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product h3 {
+    color: #fdcb6e; /* Light yellow for product title */
+    margin-bottom: 10px;
+}
+
+.product p {
+    color: #dcdcdc; /* Light gray for product description */
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #0984e3; /* Bright blue for button */
+    color: #ffffff; /* White text on button */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #74b9ff; /* Lighter blue on hover */
+}
+
+footer {
+    background-color: #1c3f94; /* Deep blue for footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .products-heading {
+        font-size: 2em;
+    }
+
+    .product {
+        width: 90%; /* Make products full width on smaller screens */
+    }
+
+    p {
+        font-size: 1em; /* Adjust paragraph font size */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .products-heading {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 0.9em; /* Further reduce paragraph font size */
+    }
+
+    .btn {
+        font-size: 14px; /* Adjust button font size */
+    }
+}

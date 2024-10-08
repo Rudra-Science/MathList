@@ -1,0 +1,96 @@
+/* style.css */
+body {
+  background-color: #121212; /* Dark background */
+  color: #fdcb6e; /* Light yellow text color */
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: #1e1e1e; /* Dark container */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+  width: 90%; /* Full width on smaller screens */
+  max-width: 400px; /* Max width for larger screens */
+}
+
+h1 {
+  color: #fdcb6e; /* Light yellow for header */
+}
+
+.shape-selector, .buttons, .results {
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #0984e3; /* Bright blue button */
+  color: #fdcb6e; /* Light yellow text color */
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #74b9ff; /* Lighter blue on hover */
+}
+
+#canvas2d {
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  background-color: #222; /* Slightly darker background for canvas */
+  border: 2px solid #fdcb6e; /* Light yellow border */
+}
+
+/* Shape styles for 2D */
+.shape {
+  background-color: #2c3e50; /* Darker blue-gray for shapes */
+  border: 2px solid #fdcb6e; /* Light yellow border */
+  transition: background-color 0.3s; /* Smooth background change */
+  display: inline-block; /* For proper layout */
+}
+
+.shape:hover {
+  background-color: #34495e; /* Lighter blue-gray on hover */
+}
+
+/* Shape styles for 3D (add specific classes as needed) */
+#three-container {
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  background-color: #222; /* Dark background for 3D container */
+  border: 2px solid #fdcb6e; /* Light yellow border */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2em; /* Adjust header font size */
+  }
+
+  .btn {
+      font-size: 14px; /* Adjust button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5em; /* Further adjust header font size */
+  }
+
+  .btn {
+      width: 100%; /* Full width button */
+      padding: 10px; /* Adjust padding for smaller screens */
+  }
+}

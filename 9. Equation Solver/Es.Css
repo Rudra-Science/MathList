@@ -1,0 +1,59 @@
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #1e1e1e; /* Dark container */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 400px; /* Increased width */
+    text-align: center; /* Center text */
+}
+
+h1 {
+    font-size: 24px; /* Larger font size for the title */
+    margin-bottom: 20px;
+    color: #fdcb6e; /* Light yellow for header */
+}
+
+input {
+    width: 100%; /* Full width input */
+    padding: 15px; /* Larger padding */
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Larger font size for input */
+    background-color: #333333; /* Dark input background */
+    color: #ffffff; /* Light text color */
+}
+
+.btn-red {
+    background-color: #0984e3; /* Bright blue button */
+    color: #ffffff; /* Light text color */
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Larger font size for button */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Full width button */
+}
+
+.btn-red:hover {
+    background-color: #74b9ff; /* Lighter blue on hover */
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px; /* Larger font size for results */
+    background-color: #2c3e50; /* Darker blue-gray for cells */
+    color: #ffffff; /* Light text color */
+}
